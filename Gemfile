@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
-
+gem 'foreman'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+
 gem 'haml'
 
 gem 'rspec'
@@ -33,6 +34,9 @@ gem 'devise', '3.0.0.rc'
 gem 'omniauth'
 gem 'omniauth-facebook'
 
+group :test do
+  gem 'rspec-rails', require: false
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
